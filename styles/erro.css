@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Baloo+2:wght@400;500;600;700;800&family=Fredoka+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Nanum+Brush+Script&family=Patrick+Hand&display=swap');
+
+:root {
+                            /* Fontes */
+    --F_escritaManual: 'Patrick Hand', cursive;
+    --F_escritaManual2: 'Nanum Brush Script', cursive;
+    --F_fonteGrossa: 'Fredoka One', cursive;
+    --F_fonteNormal: 'Baloo 2', cursive;
+    --F_fonteFina: 'Alumni Sans Pinstripe', sans-serif;
+    --F_fonteArredondada: 'M PLUS Rounded 1c', sans-serif;
+
+                            /* Cores */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+p#emoji {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: calc(15vh);
+    left: calc(43vw);
+    font-size: 150px;
+}
+
+p#errorMessage {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: calc(51vh);
+    left: calc(34vw);
+    font-family: var(--F_fonteGrossa);
+    font-size: 30px;
+}
