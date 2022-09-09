@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Baloo+2:wght@400;500;600;700;800&family=Fredoka+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Nanum+Brush+Script&family=Patrick+Hand&display=swap');
 
 :root {
-                            /* Fontes */
-    --F_escritaManual: font-family: 'Patrick Hand', cursive;
-    --F_escritaManual2: font-family: 'Nanum Brush Script', cursive;
-    --F_fonteGrossa: font-family: 'Fredoka One', cursive;
-    --F_fonteNormal: font-family: 'Baloo 2', cursive;
-    --F_fonteFina: font-family: 'Alumni Sans Pinstripe', sans-serif;
-    --F_fonteArredondada: font-family: 'M PLUS Rounded 1c', sans-serif;
+    /* Fontes */
+    --F_escritaManual: 'Patrick Hand', cursive;
+    --F_escritaManual2: 'Nanum Brush Script', cursive;
+    --F_fonteGrossa: 'Fredoka One', cursive;
+    --F_fonteNormal: 'Baloo 2', cursive;
+    --F_fonteFina: 'Alumni Sans Pinstripe', sans-serif;
+    --F_fonteArredondada: 'M PLUS Rounded 1c', sans-serif;
 
-                            /* Cores */
+    /* Cores */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul[ultilityBar ]{
+    position: fixed;
+    bottom: 20px;
+    left: 20vw;
+    width: 50vw;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(194, 194, 194);
+}
+
+li[options] {
+    float: left;
 }
