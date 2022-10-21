@@ -22,10 +22,13 @@ ul[ultilityBar ]{
     position: fixed;
     bottom: 20px;
     left: 20vw;
-    width: 50vw;
+    width: max-content;
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(194, 194, 194);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 li[options] {

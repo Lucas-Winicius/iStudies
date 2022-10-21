@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/posts.css">
+    <title>Adicionar Post</title>
+</head>
+<body>
+    
+    <div validation style="display: block;" >
+        <h1>Insira a senha de administrador</h1>
+        <input type="password" id="code" placeholder="Senha" oninput="validatePassword('12345')">
+        <error></error>
+    </div>
+
+    <div home style="display: none;" >
+        <h1>Adicionar conteudos</h1>
+        <input type="file" foto oninput="previewFile()" accept="image/*">
+        <!-- <input type="text" descricao oninput=""> -->
+        <img src="" height="200" alt="Image preview...">
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/background.mp4" type="video/mp4">
+    </video>
+
+    <!-- <z>a</z> -->
+    <script src="./scripts/addContent.js"></script>
+    <script src="./scripts/others.js"></script>
+</body>
+</html>

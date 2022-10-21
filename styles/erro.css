@@ -26,7 +26,7 @@ p#emoji {
     display: block;
     text-align: center;
     font-size: 150px;
-    margin-top: 21vh;
+    margin-top: 10vw;
 }
 
 p#errorMessage {

@@ -1,0 +1,1 @@
+(document.querySelector('body').innerHTML += '<!-- Criado com carinho por luk -->')()
