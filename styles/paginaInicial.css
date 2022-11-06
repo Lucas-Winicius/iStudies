@@ -1,37 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Baloo+2:wght@400;500;600;700;800&family=Fredoka+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Nanum+Brush+Script&family=Patrick+Hand&display=swap');
 
 :root {
-                            /* Fontes */
+    /* Fontes */
     --F_escritaManual: 'Patrick Hand', cursive;
     --F_escritaManual2: 'Nanum Brush Script', cursive;
     --F_fonteGrossa: 'Fredoka One', cursive;
     --F_fonteNormal: 'Baloo 2', cursive;
     --F_fonteFina: 'Alumni Sans Pinstripe', sans-serif;
     --F_fonteArredondada: 'M PLUS Rounded 1c', sans-serif;
-
-                            /* Cores */
 }
 
 * {
+    outline: 0;
     margin: 0;
     padding: 0;
-    outline: 0;
+    font-family: var(--F_fonteArredondada);
 }
 
 body {
-    background-color: rgb(255, 62, 62);
+    background-color: lightblue;
 }
 
-p#emoji {
-    display: block;
-    text-align: center;
-    font-size: 150px;
-    margin-top: 10vw;
+nav {
+    width: 120px;
 }
 
-p#errorMessage {
-    display: block;
-    text-align: center;
-    font-family: var(--F_fonteGrossa);
-    font-size: 30px;
+nav img {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.iconsContainer {
+    background-color: whitesmoke;
+    width: min-content;
+    margin: 15px 5px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 3px 0px #000000ba;
+}
+
+.hide {
+    display: none;
 }

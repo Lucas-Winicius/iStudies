@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+video {
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#validation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    color: lightgray;
+    text-align: center;
+}
+
+div#validation > h1, div#validation > p {
+    font-family: 'Urbanist', sans-serif;
+}
+
+div#validation > h1 {
+    font-size: 6em;
+    font-weight: 50;
+}
+
+div#validation > p {
+    font-size: 2em;
+    padding: 20px;
+}
+
+div#validation > input {
+    background-color: rgba(211, 211, 211, 0.521);
+    border: none;
+    margin: auto;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    outline: none;
+    text-align: center;
+}
+
+div#validation > input::placeholder {
+    color: rgba(255, 255, 255, 0.753);
+    padding: 20px;
+    text-align: center;
+}
+
+div#validation > input::-ms-value {
+    color: red;
+}
+
+span#errorText {
+    display: block;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px #000000a8;
+}
+
+/* CONTEUDOS */
+
