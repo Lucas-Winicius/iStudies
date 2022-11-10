@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,26 @@
     <link rel="stylesheet" href="styles/adicionarConteudos.css">
     <title>Contents</title>
 </head>
+
 <body>
-    <div id="validation-container">
-        <video src="videos/background.mp4" autoplay loop></video>
-        <div id="validation">
-            <h1>iStudies</h1>
-            <p>Francisco Antonino</p>
-            <input type="password" name="senha" id="senha" placeholder="Senha" senha="12345">
-            <span id="errorText" style="display: none;">Senha incorreta</span>
-        </div>
+    <video src="videos/background.mp4" autoplay loop></video>
+    
+    <div id="validation" style="display: none;">
+        <h1>iStudies</h1>
+        <p>Francisco Antonino</p>
+        <input type="password" name="senha" id="senha" placeholder="Senha" senha="12345">
+        <span id="errorText" style="display: none;">Senha incorreta</span>
     </div>
 
     <div id="home">
-        <h1>Adicionar conteudos</h1>
-        <input type="text" name="texto" id="texto">
-        
+        <h1>Adicionar Publicação</h1>
+        <input type="file" id="selectedFile" style="display: none;" accept="image/*">
+        <input type="button" value=" + Adicionar Foto" onclick="document.getElementById('selectedFile').click();" id="foto">
+        <input type="text" name="descricao" id="descricao" placeholder=" + Adicionar Descrição">
+        <button id="postar">Postar</button>
     </div>
 
     <script src="./scripts/contents.js"></script>
 </body>
+
 </html>

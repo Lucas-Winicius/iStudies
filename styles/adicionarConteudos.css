@@ -71,5 +71,79 @@ span#errorText {
     text-shadow: 1px 1px 4px #000000a8;
 }
 
-/* CONTEUDOS */
+/* ADICIONAR CONTEUDOS */
 
+div#home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.048);
+    padding: 50px 30px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 3px 4px 17px 0px #000000bf;
+}
+
+div#home > input {
+    display: block;
+}
+
+input#foto, input#descricao {
+    background-color: rgba(255, 255, 255, 0.103);
+    margin: 15px auto;
+    padding: 8px 15px;
+    border: .5px solid rgb(107, 107, 107);
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px 0px #fff;
+    transition: 1s;
+}
+
+input#foto:hover, input#descricao:hover {
+    box-shadow: 9px 9px 0px 0px #fff;
+}
+
+input#descricao {
+    outline: none;
+    font-size: 1em;
+    
+}
+
+input#descricao::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+button#postar {
+    border: none;
+    background-color: rgba(211, 211, 211, 0.13);
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: .1px solid lightgrey;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button#postar:hover {
+    background-color: rgba(224, 223, 223, 0.808);
+    color: rgb(43, 43, 43);
+}
+
+button#postar:disabled {
+    /* text-decoration: line-through; */
+    border: none;
+    box-shadow: inset 0px 0px 20px 2px red;
+    cursor: default;
+}
+
+button#postar:disabled:hover {
+    background-color: rgba(211, 211, 211, 0.13);
+    color: whitesmoke;
+}
