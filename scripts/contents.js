@@ -7,5 +7,5 @@ document.querySelector('#senha').oninput = e => {
     if(senha != inputValue) return;
 
     document.querySelector('#home').style.display = 'block'
-    document.querySelector('#validation-container').style.display = 'none'
+    document.querySelector('#validation').style.display = 'none'
 }
