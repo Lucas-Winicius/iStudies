@@ -21,10 +21,12 @@
 
     <div id="home" style="display: none;">
         <h1>Adicionar Publicação</h1>
-        <input type="file" id="selectedFile" style="display: none;" accept="image/*">
-        <input type="button" value=" + Adicionar Foto" onclick="document.getElementById('selectedFile').click();" id="foto">
-        <input type="text" name="descricao" id="descricao" placeholder=" + Adicionar Descrição">
-        <button id="postar">Postar</button>
+        <form action="/sendPost" method="post", enctype="multipart/form-data">
+            <input type="button" value=" + Adicionar Foto" onclick="document.getElementById('selectedFile').click();" id="foto">
+            <input type="file" id="selectedFile" style="display: none;">
+            <input type="text" name="descricao" id="descricao" placeholder=" + Adicionar Descrição">
+            <button type="submit" id="postar">Postar</button>
+        </form>
     </div>
 
     <script src="./scripts/contents.js"></script>
