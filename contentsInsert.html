@@ -21,15 +21,28 @@
 
     <div id="home" style="display: none;">
         <h1>Adicionar Publicação</h1>
-        <form action="/sendPost" method="post", enctype="multipart/form-data">
+
             <input type="button" value=" + Adicionar Foto" onclick="document.getElementById('selectedFile').click();" id="foto">
-            <input type="file" id="selectedFile" style="display: none;">
+            <input type="file" id="selectedFile" style="display: none;" multiple>
             <input type="text" name="descricao" id="descricao" placeholder=" + Adicionar Descrição">
             <button type="submit" id="postar">Postar</button>
-        </form>
-    </div>
 
+    </div>
     <script src="./scripts/contents.js"></script>
+    <script src="./scripts/jquery-3.6.1.min.js"></script>
+    <script>
+        $('button[type="submit"]').click(function () {
+            const formData = new FormData()
+            const foto = document.querySelector('#selectedFile')
+            formData.append(foto.name, foto.files[0])
+
+            $.ajax({
+                type: "POST",
+                url: '/upload',
+                body: formData
+            }).then(response => console.log(response.responseTexts))
+        })
+    </script>
 </body>
 
 </html>
